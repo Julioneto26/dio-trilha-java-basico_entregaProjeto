@@ -1,4 +1,6 @@
 import br.com.dio.desafio.dominio.Curso ;
+import br.com.dio.desafio.dominio.Mentoria ;
+import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -13,11 +15,15 @@ public class Main {
         curso2.setDescricao("Curso Java Tooop dos universos");
         curso2.setCargaHoraria(120);
 
-
+        Mentoria mentoria1 = new Mentoria();
+        mentoria1.setTitulo("Mentoria Brocando em JAVA");
+        mentoria1.setDescricao("Mentoria java total");
+        mentoria1.setData(LocalDate.now());
 
 
         System.out.println(curso1);
         System.out.println(curso2);
+        System.out.println(mentoria1);
 
 
     }
